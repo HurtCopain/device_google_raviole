@@ -1,17 +1,24 @@
 # Boot animation
 TARGET_SCREEN_HEIGHT := 3120
 TARGET_SCREEN_WIDTH := 1440
+TARGET_BOOT_ANIMATION_RES := 1440
 
-# Inherit some common StatiX stuff.
-$(call inherit-product, vendor/statix/config/common.mk)
-$(call inherit-product, vendor/statix/config/gsm.mk)
+# Inherit some common Evolution X stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+
+EVO_BUILD_TYPE := OFFICIAL
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_USES_BLUR := true
+WITH_GMS := true
 
 # Inherit device configuration
 $(call inherit-product, device/google/raviole/aosp_raven_64.mk)
-$(call inherit-product, device/google/raviole/device-statix.mk)
+$(call inherit-product, device/google/raviole/device-evolution.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := statix_raven
+PRODUCT_NAME := evolution_raven
 PRODUCT_MODEL := Pixel 6 Pro
 PRODUCT_BRAND := google
 
