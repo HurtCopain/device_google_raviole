@@ -3,21 +3,21 @@ TARGET_SCREEN_HEIGHT := 2280
 TARGET_SCREEN_WIDTH := 1080
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common DerpFest stuff.
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
+DERP_BUILDTYPE := Official
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_BLUR := true
-WITH_GMS := true
 
 # Inherit device configuration
 $(call inherit-product, device/google/raviole/aosp_oriole_64.mk)
-$(call inherit-product, device/google/raviole/device-evolution.mk)
+$(call inherit-product, device/google/raviole/device-derp.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := evolution_oriole
+PRODUCT_NAME := derp_oriole
 PRODUCT_MODEL := Pixel 6
 PRODUCT_BRAND := google
 
