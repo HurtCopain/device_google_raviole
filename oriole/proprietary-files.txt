@@ -1246,6 +1246,7 @@ system_ext/etc/permissions/oemrilhook.xml
 -system_ext/lib/vendor.samsung_slsi.telephony.hardware.oemservice@1.0.so
 -system_ext/lib/vendor.samsung_slsi.telephony.hardware.radioExternal@1.0.so
 -system_ext/lib64/libmediaadaptor.so
+-system_ext/lib64/libpowerstatshaldataprovider.so
 -system_ext/lib64/vendor.samsung_slsi.telephony.hardware.oemservice@1.0.so
 -system_ext/lib64/vendor.samsung_slsi.telephony.hardware.radioExternal@1.0.so
 -system_ext/priv-app/OemRilService/OemRilService.apk
