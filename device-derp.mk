@@ -64,8 +64,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.ims.singlereg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.singlereg.xml
 
 # Powershare
-#PRODUCT_PACKAGES += \
-#    vendor.lineage.powershare@1.0-service.gs101
+PRODUCT_PACKAGES += \
+    vendor.lineage.powershare@1.0-service.gs101
 
 # EUICC
 PRODUCT_COPY_FILES += \
@@ -80,7 +80,7 @@ PRODUCT_PACKAGES += \
     Iwlan
 
 # Parts
-#$(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
+$(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
 
 # Properties
 TARGET_VENDOR_PROP := device/google/raviole/vendor.prop
