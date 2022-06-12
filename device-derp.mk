@@ -82,6 +82,9 @@ PRODUCT_PACKAGES += \
 # Parts
 $(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
 
+# Touch
+include hardware/google/pixel/touch/device.mk
+
 # Properties
 TARGET_VENDOR_PROP := device/google/raviole/vendor.prop
 
