@@ -93,3 +93,5 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # EUICC
 PRODUCT_PACKAGES += \
     EuiccSupportPixelOverlay
+    
+DEVICE_PACKAGE_OVERLAYS += device/google/raviole/overlay-xdroid
